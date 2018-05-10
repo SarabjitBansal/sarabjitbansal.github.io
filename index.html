@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sarabjit Bansal - Full Stack Web Developer</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/master.css">
+  <!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" /> -->
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <script src = "js/three.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.0/dist/typeit.min.js"></script>
+
+  <script src = "js/jquery.js"></script>
+  <script src = "js/main1.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div id="particles-js"></div>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    <button class="sidebarBtn"><span></span></button>
+    </div>
+    <div id="home" class="section">
+      <div id="myDetails">
+        <p id ="helloId"></p>
+      </div>
+    </div>
+    <div id="about" class="section">
+      <p class = "pp">About</p>
+      <p>I am a foodie, interior stylist and a full-stack developer with strong programming skills making a return to the IT industry after moving from overseas. <br></br>Having worked for almost 6 years in the IT industry has given me strong coding etiquette along with project management and communication skills. I have brought myself up-to-date with the latest in tech and am looking forward to an exciting future in IT.</p>
+      <p>Along with the deep desire for coding, I love cooking food, enjoy painting abstract art and styling interiors; Art and Craft in general!!</p>
+      <!-- <p>I am a dynamic individual with 6 years experience in the software development sector. I have a strong foundation in programming that enables me to learn new programming languages as well as have excellent interpersonal skills.</p>
+      <p>I look forward to be challenged to grow my knowledge of IT and project management skills.</p> -->
+    </div>
+<!-- PORTFOLIO -->
+    <div id="portfolio" class="section">
+      <p class ="pp">Portfolio</p>
+      <section class="carousel">
+        <nav></nav>
+        <div class="container1">
+          <div class="slide">
+            <h1>EcoSmart App</h1>
+              <div class="project1">
+              <img src="./images/ecosmartapp.png" alt="img" />
+              <div class="project-details1">
+                <p>A web app to help people make more sustainable choices in everyday life.</p>
+                <ul>
+                  <li>Built on Ruby on Rails</li>
+                  <li>Admin can broadcast information about upcoming events on the forum</li>
+                  <li>Users can communicate with each other in real-time</li>
+                  <li>Accept Donations through Stripe</li>
+                  <li>Events Scrapping through Nokogiri</li>
+                </ul>
+                <a href="https://ecosmart-app.herokuapp.com/"target="_blank">Click here to view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h1>Healthy Food App</h1>
+              <div class="project1">
+              <img src="./images/healthyfoodapp.png" alt="img" />
+              <div class="project-details1">
+                <p>This website is the ideal place where you can find healthy recipes that will help in making changes to your food habits.</p>
+                <ul>
+                  <li>Built on Ruby on Rails</li>
+                  <li>Cloudinary to upload images</li>
+                  <li>Top Visited Recipes</li>
+                  <li>Users can Add to Favourites List</li>
+                  <li>Search for Recipes</li>
+                </ul>
+                <a href="https://herokuprojectga1.herokuapp.com/"target="_blank">Click here to view project</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <h1>Tic Tac Toe</h1>
+              <div class="project1">
+              <img src="./images/tictactoe.png" alt="img" />
+              <div class="project-details1">
+                <p>Tic Tac Toe - The fun age old game of X's and 0's.</p>
+                <ul>
+                  <li>Built in Javascript</li>
+                  <li>Incorporated AI algorithm in 3x3 grid games </li>
+                  <li>In 2 Player games, users can make a grid of any size</li>
+                  <li>Grid is dynamically created in runtime using JS</li>
+                </ul>
+                <a href="https://github.com/sarabjitbansal/project0"target="_blank">Click here to view project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- ends -->
+    </div>
+
+    <div id="contact" class="social-wrapper section">
+      <p class="pp" >Contact</p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/sarabjit-bansal" target="_blank"><i id="linkedin" class="fa fa-linkedin-square fa-3x fa-social"></i></a></li>
+        <li><a href="https://github.com/SarabjitBansal" target="_blank"><i id="github" class="fa fa-github-square fa-3x fa-social"></i></a></li>
+        <li><a href="mailto:sarabjitbansal@gmail.com" target="_blank" ><i id="email" class="fa fa-envelope fa-3x fa-social"></i></a></li>
+        <li><a href="./images/SarabjitBansalR.pdf" target="_blank"><i id="attach" class="fa fa-paperclip fa-3x fa-social"></i></a></li>
+      </ul>
+    </div>
+    <a href="#home"id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+  </div>
+</body>
+</html>

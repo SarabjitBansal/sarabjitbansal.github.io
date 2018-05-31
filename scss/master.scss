@@ -43,7 +43,7 @@ body {
 #contact {
   .pp {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 20px;;
     margin: 0;
     top: 6%;
     font-size: 60px;
@@ -236,6 +236,11 @@ body {
 #attach:hover {
   color: #f2e29b;
   text-shadow: 0px 16px 10px rgba(242, 226, 155, 0.3);
+
+  }
+#insta:hover {
+  color: #ff0000;
+  text-shadow: 0px 16px 10px rgba(255, 0, 0, 0.3);
 
   }
 
@@ -455,5 +460,152 @@ body {
 	width: 100%;
   h1 {
     font-size: 30px;
+  }
+}
+
+// new code
+
+#linkedin:hover {
+  color: #0077B5;
+  text-shadow: 0px 16px 10px rgba(0, 160, 220, 0.3);
+}
+
+#github:hover {
+  color:  #000;
+  text-shadow: 0px 16px 10px rgba(0, 0, 0, 0.3);
+}
+
+#email:hover {
+  color: #e6b0f2;
+  text-shadow: 0px 16px 10px rgba(230, 176, 242, 0.3);
+
+  }
+#attach:hover {
+  color: #f2e29b;
+  text-shadow: 0px 16px 10px rgba(242, 226, 155, 0.3);
+
+  }
+#insta:hover {
+  color: #ff0000;
+  text-shadow: 0px 16px 10px rgba(255, 0, 0, 0.3);
+
+  }
+
+
+/* Color Variables */
+$color-codepen: #000;
+$color-github: #000;
+$color-twitter: #2b97f1;
+$color-dribbble: #ef5a92;
+$color-instagram: #ff0000;
+$color-linkedin: #006599;
+$color-facebook: #3b5a9b;
+$color-email: #e6b0f2;
+$color-attach: #f2e29b;
+
+/* Social Icon Mixin */
+@mixin social-icon($color) {
+  background: $color;
+  background: linear-gradient(tint($color, 5%), shade($color, 5%));
+  border-bottom: 1px solid shade($color, 20%);
+  color: tint($color, 50%);
+
+  &:hover {
+    color: tint($color, 80%);
+    text-shadow: 0px 1px 0px shade($color, 20%);
+  }
+
+  .tooltip {
+    background: $color;
+    background: linear-gradient(tint($color, 15%), $color);
+    color: tint($color, 80%);
+
+    &:after {
+      border-top-color: $color;
+    }
+  }
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // width: 80px;
+  // height: 80px;
+  // margin: 0 0.5rem;
+  // border-radius: 50%;
+  cursor: pointer;
+  // font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  // font-size: 2.5rem;
+  text-decoration: none;
+  // text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  transition: all 0.15s ease;
+
+  &:hover {
+    color: #000;
+
+    .tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(-50%, -150%);
+    }
+  }
+
+  &:active {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+  }
+
+  // &--linkedin { @include social-icon($color-linkedin); }
+  // &--twitter { @include social-icon($color-twitter); }
+  // &--codepen { @include social-icon($color-codepen); }
+  // &--facebook { @include social-icon($color-facebook); }
+  // &--instagram { @include social-icon($color-instagram); }
+  // &--dribbble { @include social-icon($color-dribbble); }
+  // &--github { @include social-icon($color-github); }
+  // &--email { @include social-icon($color-dribbble); }
+  // &--attach { @include social-icon($color-github); }
+
+  i {
+    position: relative;
+    top: 1px;
+  }
+}
+
+/* Tooltips */
+.tooltip {
+    font-family: 'Poppins', sans-serif;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.2rem 1rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+
+  &:after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
   }
 }

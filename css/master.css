@@ -513,6 +513,8 @@ body {
       text-align: center; }
 
   .carousel {
-    height: 730px; } }
+    height: 730px; }
+    .carousel .slide {
+      pointer-events: none; } }
 
 /*# sourceMappingURL=master.css.map */

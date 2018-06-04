@@ -705,6 +705,9 @@ $color-attach: #f2e29b;
 }
 .carousel {
   height:730px;
+  .slide {
+    pointer-events:none;
+  }
 }
 }
 // new code

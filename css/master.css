@@ -313,6 +313,8 @@ body {
   text-align: left; }
   .project-details1 p {
     text-align: left; }
+    .project-details1 p i {
+      font-size: 25px; }
   .project-details1 ul {
     text-align: left;
     list-style-type: circle;
@@ -446,5 +448,71 @@ body {
     border-width: 10px 10px 0 10px;
     border-color: transparent;
     transform: translate(-50%, 100%); }
+
+#myskills {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-bottom: 5px; }
+  #myskills img {
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0; }
+
+@media (max-width: 1000px) {
+  display: block;
+  #home {
+    font-size: 30px; }
+    #home p::first-line {
+      font-size: 70px; }
+
+  .project1 {
+    padding-left: 20px;
+    padding-right: 30px; }
+    .project1 img {
+      display: block;
+      width: 50vh;
+      margin-right: 10px; }
+
+  .project-details1 {
+    display: block;
+    width: 100vh; }
+    .project-details1 p {
+      width: 45vh; }
+    .project-details1 ul {
+      width: 50vh; }
+      .project-details1 ul a {
+        width: 40vh; }
+    .project-details1 li {
+      width: 39vh; }
+
+  #myskills {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center; }
+
+  .carousel {
+    padding: 0; }
+
+  #portfolio .pp, #about .pp, #contact .pp {
+    font-size: 40px; }
+
+  #about {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left; }
+    #about p {
+      font-size: 20px; }
+    #about .pp {
+      font-size: 40px;
+      text-align: center; }
+
+  .carousel {
+    height: 730px; } }
 
 /*# sourceMappingURL=master.css.map */

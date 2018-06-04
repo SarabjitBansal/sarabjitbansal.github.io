@@ -634,7 +634,32 @@ $color-attach: #f2e29b;
   }
 }
 
+@media (max-width:1000px) {
 
+  #home{
+    font-size: 30px;
+    p::first-line {
+      font-size: 70px;}
+  }
+  #portfolio, #about, #contact {
+    .pp {
+      font-size: 40px;
+    }
+  }
+  #about {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    p {
+      font-size: 20px;
+    }
+    .pp {
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  
+}
 @media (max-width:450px) {
   display: block;
   #home{

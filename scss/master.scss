@@ -661,6 +661,13 @@ $color-attach: #f2e29b;
   .carousel .navClass {
     font-size: 20px;
   }
+
+  .container1 {
+    touch-action: auto;
+  -ms-touch-action: auto;
+    // overflow: hidden;
+
+  }
 }
 @media (max-width:450px) {
   display: block;
@@ -738,7 +745,8 @@ $color-attach: #f2e29b;
 
 }
 .container1 {
-  pointer-events:none;
+  touch-action: auto;
+-ms-touch-action: auto;
   // overflow: hidden;
 
 }

@@ -463,7 +463,7 @@ body {
     width: 40px;
     flex-shrink: 0; }
 
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
   display: block;
   #home {
     font-size: 30px; }

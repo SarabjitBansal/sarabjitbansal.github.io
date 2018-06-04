@@ -635,7 +635,7 @@ $color-attach: #f2e29b;
 }
 
 
-@media (max-width:1000px) {
+@media (max-width:450px) {
   display: block;
   #home{
     font-size: 30px;
@@ -712,6 +712,8 @@ $color-attach: #f2e29b;
 }
 .container1 {
   pointer-events:none;
+  // overflow: hidden;
+
 }
 }
 // new code

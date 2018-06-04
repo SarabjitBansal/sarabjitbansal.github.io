@@ -658,7 +658,9 @@ $color-attach: #f2e29b;
       text-align: center;
     }
   }
-  
+  .carousel .navClass {
+    font-size: 20px;
+  }
 }
 @media (max-width:450px) {
   display: block;
@@ -739,6 +741,10 @@ $color-attach: #f2e29b;
   pointer-events:none;
   // overflow: hidden;
 
+}
+
+.carousel .navClass {
+  font-size: 20px;
 }
 }
 // new code

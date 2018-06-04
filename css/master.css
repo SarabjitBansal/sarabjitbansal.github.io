@@ -515,6 +515,9 @@ body {
   .carousel {
     height: 730px; }
     .carousel .slide {
-      pointer-events: none; } }
+      pointer-events: none; }
+
+  .container1 {
+    pointer-events: none; } }
 
 /*# sourceMappingURL=master.css.map */

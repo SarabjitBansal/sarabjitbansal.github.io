@@ -665,6 +665,7 @@ $color-attach: #f2e29b;
   .container1 {
     touch-action: auto;
   -ms-touch-action: auto;
+  overflow-y:scroll
     // overflow: hidden;
 
   }
@@ -747,6 +748,7 @@ $color-attach: #f2e29b;
 .container1 {
   touch-action: auto;
 -ms-touch-action: auto;
+overflow-y:scroll
   // overflow: hidden;
 
 }

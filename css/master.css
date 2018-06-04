@@ -487,9 +487,7 @@ body {
 
   .container1 {
     touch-action: auto;
-    -ms-touch-action: auto;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; } }
+    -ms-touch-action: auto; } }
 @media (max-width: 450px) {
   display: block;
   #home {
@@ -546,9 +544,7 @@ body {
 
   .container1 {
     touch-action: auto;
-    -ms-touch-action: auto;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; }
+    -ms-touch-action: auto; }
 
   .carousel .navClass {
     font-size: 20px; } }

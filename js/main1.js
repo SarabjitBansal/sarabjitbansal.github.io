@@ -101,7 +101,7 @@ Carousel.prototype.handleEvent = function (event) {
       this.auto(this._autoDuration);
       break;
     case 'touchstart':
-      event.preventDefault();
+      // event.preventDefault(); // remove this code by Techelogy
       this.auto(0);
       this._container1.style.transition = 'none';
       this._touchAnchorX = this._touchX1 = this._touchX2;
